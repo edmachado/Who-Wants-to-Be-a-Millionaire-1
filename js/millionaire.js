@@ -149,10 +149,12 @@ var MillionaireModel = function(data) {
  			startSound('wrongsound', false);
  			$("#" + elm).css('background', 'red').slideDown('slow', function() {
  				$("#game").fadeOut('slow', function() {
- 					$("#game-over").html('Game Over!');
  					$("#game-over").fadeIn('slow');
  					self.transitioning = false;
- 				});
+ 					$("#restart").click(function() {
+						location.reload(true);			
+					});
+				});
  			});
  		});
  	}
@@ -173,7 +175,9 @@ $(document).ready(function() {
 		}
 		$("#pre-start").show();
 		$("#start").click(function() {
-			var index = $('#problem-set').find(":selected").val() - 1;
+			//var index = $('#problem-set').find(":selected").val() - 1;
+			//fixed in first 15 questions
+			var index = 0;
 			ko.applyBindings(new MillionaireModel(data.games[index]));
 			$("#pre-start").fadeOut('slow', function() {
 				startSound('background', true);

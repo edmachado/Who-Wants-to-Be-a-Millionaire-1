@@ -20,17 +20,24 @@ Author: Aaron Nech
 
 		<!-- Before the game begins problem set selection -->
 		<div id="pre-start">
-			<select id="problem-set">
-			</select>
-			<button id="start">Start!</button>
+			<h2>Welcome to Who Wants to Be a Millionaire - Greek Gods version</h2>
+			<h3>by Mateo Machado</h3>
+
+			<!--<select id="problem-set" value="1">
+			</select> -->
+			<br />
+			<button id="start">Start Game!</button>
 		</div>
 
 		<!-- Shown when the player wins/loses -->
 		<div id="game-over">
+			<h2>Game Over</h2>
+			<button id="restart">Try again!</button>
 		</div>
 
 		<!-- The actual game markup -->
 		<div id="game">
+			<li>Game by Mateo Machado</li>	
 			<div id="top">
 				<img src="img/logo.jpg" id="logo" />
 				<ul id="levels">
@@ -56,7 +63,8 @@ Author: Aaron Nech
 				<div id="fifty" class="options-button" data-bind="click: fifty"></div>
 				<div id="phone-friend" class="options-button" data-bind="click: fadeOutOption"></div>
 				<div id="audience" class="options-button" data-bind="click: fadeOutOption"></div>
-				<div id="money">$<span data-bind="text: formatMoney()"></span></div>
+				<!--<div id="money">$<span data-bind="text: formatMoney()"></span></div>-->
+				<div id="money"><span>Game by Mateo Machado</span></div> 
 			</div>
 			<div id="question-box">
 				<span class="big-text">Q:</span>

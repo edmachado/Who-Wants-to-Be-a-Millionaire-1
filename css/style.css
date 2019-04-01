@@ -59,9 +59,9 @@ audio {
 }
 
 #money {
-	font-size: 1.9em;
+	font-size: 1.2em;
 	font-weight: bold;
-	color: green;
+	color: #FF7E00;
 	float: right;
 	display: block;
 	height: 50px;
@@ -77,7 +77,7 @@ audio {
 
 #game-over {
 	display: none;
-	font-size: 8em;
+	font-size: 2em;
 	font-weight: bold;
 	color: white;
 	width: 980px;
@@ -108,6 +108,13 @@ audio {
 
 #pre-start {
 	display: none;
+	font-size: 2em;
+	font-weight: bold;
+	color: white;
+	width: 980px;
+	margin-top: 300px;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .answer:hover {
